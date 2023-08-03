@@ -1,0 +1,15 @@
+{
+  "name": "grownth7-test",
+  "version": "1.0.0",
+  "description": "Algoritmo de execução de tarefas.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https//github.com/LuisSempre/grownth7-test"
+  },
+  "author": "Luis Lucas",
+  "license": "ISC"
+}
