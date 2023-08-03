@@ -1,11 +1,11 @@
-interface Job {
+export interface Job {
   ID: number;
   Descrição: string;
   "Data Máxima de conclusão": string;
   "Tempo estimado": string;
 }
 
-function organizarJobs(jobsArray: Job[]): Job[][] {
+export function organizarJobs(jobsArray: Job[]): Job[][] {
   jobsArray.sort((a, b) => new Date(a["Data Máxima de conclusão"]).getTime() - new Date(b["Data Máxima de conclusão"]).getTime());
 
   function horasParaMilissegundos(horas: string): number {
