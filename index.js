@@ -1,8 +1,6 @@
 function organizarJobs(jobsArray) {
-  // Ordena os jobs por data máxima de conclusão de forma crescente
   jobsArray.sort((a, b) => new Date(a["Data Máxima de conclusão"]) - new Date(b["Data Máxima de conclusão"]));
 
-  // Função auxiliar para converter o tempo estimado de horas para milissegundos
   function horasParaMilissegundos(horas) {
     return parseInt(horas) * 60 * 60 * 1000;
   }
@@ -33,7 +31,6 @@ function organizarJobs(jobsArray) {
   return conjuntoDeArrays;
 }
 
-// Exemplo de uso com o array de jobs fornecido
 const jobs = [
 	{ 
 		"ID": 1,
